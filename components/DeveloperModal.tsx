@@ -13,12 +13,9 @@ type DeveloperModalProps = {
     bio: string
     skills: string[]
     socialLinks: {
-      portfolio?: string
       linkedin?: string
       github?: string
       twitter?: string
-      instagram?: string
-
     }
   } | null
 }
@@ -78,11 +75,6 @@ export default function DeveloperModal({ isOpen, onClose, developer }: Developer
               <div>
                 <h3 className="text-lg font-semibold mb-2">Connect</h3>
                 <div className="flex space-x-4">
-                  {developer.socialLinks.portfolio && (
-                    <a href={developer.socialLinks.portfolio} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">
-                      Portfolio
-                    </a>
-                  )}
                   {developer.socialLinks.linkedin && (
                     <a href={developer.socialLinks.linkedin} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">
                       LinkedIn
