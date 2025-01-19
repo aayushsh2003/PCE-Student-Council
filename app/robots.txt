@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.collegestudentcouncil.com/sitemap.xml
+Sitemap: https://pce-student-council.vercel.app/sitemap.xml
 
