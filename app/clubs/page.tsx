@@ -129,7 +129,7 @@ export default function Clubs() {
           transition={{ delay: 0.8, duration: 0.5 }}
         >
           <h2 className="text-3xl font-semibold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-green-600">
-            &quot;Can't Find What You're Looking For&quot;
+            &quot;Can&apos;t Find What You&apos;re Looking For?&quot;
           </h2>
           <p className="text-xl text-gray-600 mb-8">
             Start your own club and make your mark on campus!
