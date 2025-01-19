@@ -5,25 +5,7 @@ import { motion } from 'framer-motion'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
-import { Download, ExternalLink, FileText, Book, Newspaper, Lightbulb } from 'lucide-react'
-import type { Metadata } from 'next';
-
-export const metadata: Metadata = {
-  title: 'Resources',
-  description: 'Access a wealth of student resources, including forms, guidelines, and campus services information provided by the College Student Council.',
-  openGraph: {
-    title: 'Resources | College Student Council',
-    description: 'Access a wealth of student resources, including forms, guidelines, and campus services information provided by the College Student Council.',
-    images: [
-      {
-        url: 'https://www.collegestudentcouncil.com/images/resources-og.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'Student Resources',
-      },
-    ],
-  },
-};
+import { Download, ExternalLink, FileText, Book, Lightbulb } from 'lucide-react'
 
 const resources = [
   { id: 1, name: "Event Planning Form", url: "#", type: "PDF", icon: FileText, color: "from-red-400 to-red-600" },

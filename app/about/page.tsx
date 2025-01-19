@@ -2,26 +2,8 @@
 
 import Image from 'next/image'
 import { motion } from 'framer-motion'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Card, CardContent, CardHeader } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
-import type { Metadata } from 'next';
-
-export const metadata: Metadata = {
-  title: 'About Us',
-  description: 'Learn about the College Student Council, our mission, history, and the team behind our initiatives.',
-  openGraph: {
-    title: 'About Us | College Student Council',
-    description: 'Learn about the College Student Council, our mission, history, and the team behind our initiatives.',
-    images: [
-      {
-        url: 'https://www.collegestudentcouncil.com/images/about-og.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'About College Student Council',
-      },
-    ],
-  },
-};
 
 export default function About() {
   return (
@@ -45,7 +27,7 @@ export default function About() {
           <h2 className="text-3xl font-semibold mb-6 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-500">Our Mission</h2>
           <Card className="bg-gradient-to-r from-blue-500 to-teal-500 text-white">
             <CardContent className="text-lg italic text-center p-6">
-              "To represent and advocate for the student body, fostering a vibrant campus community and enhancing the college experience for all students."
+            &quot;To represent and advocate for the student body, fostering a vibrant campus community and enhancing the college experience for all students.&quot;
             </CardContent>
           </Card>
         </motion.section>
@@ -94,7 +76,7 @@ export default function About() {
                 <Card className="overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-xl">
                   <CardHeader className="p-0">
                     <div className="relative h-48">
-                      <Image src={member.image || "/placeholder.svg"} alt={member.name} layout="fill" objectFit="cover" className="transition-transform duration-300 transform hover:scale-110" />
+                      <Image src={member.image || "/placeholder.svg"} alt={member.name} layout="fill" style={{ objectFit: 'cover' }} className="transition-transform duration-300 transform hover:scale-110" />
                       <div className={`absolute inset-0 bg-gradient-to-br ${member.color} opacity-60`}></div>
                     </div>
                   </CardHeader>

@@ -4,26 +4,8 @@ import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { Input } from '@/components/ui/input'
+// import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
-import type { Metadata } from 'next';
-
-export const metadata: Metadata = {
-  title: 'Get Involved',
-  description: 'Discover ways to get involved with the College Student Council. Join committees, volunteer for events, and make a difference on campus.',
-  openGraph: {
-    title: 'Get Involved | College Student Council',
-    description: 'Discover ways to get involved with the College Student Council. Join committees, volunteer for events, and make a difference on campus.',
-    images: [
-      {
-        url: 'https://www.collegestudentcouncil.com/images/get-involved-og.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'Get Involved with College Student Council',
-      },
-    ],
-  },
-};
 
 export default function GetInvolved() {
   const [feedback, setFeedback] = useState('')

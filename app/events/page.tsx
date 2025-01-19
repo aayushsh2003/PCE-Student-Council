@@ -5,24 +5,6 @@ import { motion } from 'framer-motion'
 import { Calendar } from '@/components/ui/calendar'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
-import type { Metadata } from 'next';
-
-export const metadata: Metadata = {
-  title: 'Events',
-  description: 'Stay up-to-date with the latest campus events, workshops, and activities organized by the College Student Council.',
-  openGraph: {
-    title: 'Events | College Student Council',
-    description: 'Stay up-to-date with the latest campus events, workshops, and activities organized by the College Student Council.',
-    images: [
-      {
-        url: 'https://www.collegestudentcouncil.com/images/events-og.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'College Events Calendar',
-      },
-    ],
-  },
-};
 
 const events = [
   { id: 1, name: "Student Council Meeting", date: new Date(2025, 4, 15), location: "Room 101", time: "3:00 PM", category: "Meeting", color: "from-blue-400 to-indigo-400" },

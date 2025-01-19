@@ -5,24 +5,6 @@ import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
-import type { Metadata } from 'next';
-
-export const metadata: Metadata = {
-  title: 'Clubs',
-  description: 'Explore the diverse range of student-led clubs and organizations at our college. Find your perfect fit and get involved!',
-  openGraph: {
-    title: 'Clubs | College Student Council',
-    description: 'Explore the diverse range of student-led clubs and organizations at our college. Find your perfect fit and get involved!',
-    images: [
-      {
-        url: 'https://www.collegestudentcouncil.com/images/clubs-og.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'College Clubs and Organizations',
-      },
-    ],
-  },
-};
 
 const clubs = [
   { 
@@ -147,7 +129,7 @@ export default function Clubs() {
           transition={{ delay: 0.8, duration: 0.5 }}
         >
           <h2 className="text-3xl font-semibold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-green-600">
-            Can't Find What You're Looking For?
+            &quot;Can&apos;t Find What You&apos;re Looking For?&quot;
           </h2>
           <p className="text-xl text-gray-600 mb-8">
             Start your own club and make your mark on campus!

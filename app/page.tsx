@@ -9,24 +9,6 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { CalendarDays, Users, BookOpen, Bell } from 'lucide-react'
 import NewsModal from '@/components/NewsModal'
 import EventModal from '@/components/EventModal'
-import type { Metadata } from 'next';
-
-export const metadata: Metadata = {
-  title: 'Home',
-  description: 'Welcome to the College Student Council. Discover events, clubs, and resources for an enriching campus experience.',
-  openGraph: {
-    title: 'Home | College Student Council',
-    description: 'Welcome to the College Student Council. Discover events, clubs, and resources for an enriching campus experience.',
-    images: [
-      {
-        url: 'https://www.collegestudentcouncil.com/images/home-og.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'College Student Council Home',
-      },
-    ],
-  },
-};
 
 const newsItems = [
   {
@@ -187,7 +169,7 @@ export default function Home() {
             >
               <Card className="overflow-hidden hover:shadow-lg transition-shadow h-full">
                 <div className="relative h-48">
-                  <Image src={event.image || "/placeholder.svg"} alt={event.title} layout="fill" objectFit="cover" />
+                  <Image src={event.image || "https://placehold.co/600x400/png"} alt={event.title} layout="fill" objectFit="cover" />
                   <div className={`absolute inset-0 ${event.color} opacity-50`}></div>
                   <div className="absolute inset-0 flex items-center justify-center">
                     <h3 className="text-xl md:text-2xl font-bold text-white shadow-text">{event.title}</h3>

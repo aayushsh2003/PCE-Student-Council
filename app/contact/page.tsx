@@ -7,24 +7,6 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
 import { Facebook, Instagram, Twitter } from 'lucide-react'
-import type { Metadata } from 'next';
-
-export const metadata: Metadata = {
-  title: 'Contact Us',
-  description: 'Get in touch with the College Student Council. We\'re here to answer your questions and hear your feedback.',
-  openGraph: {
-    title: 'Contact Us | College Student Council',
-    description: 'Get in touch with the College Student Council. We\'re here to answer your questions and hear your feedback.',
-    images: [
-      {
-        url: 'https://www.collegestudentcouncil.com/images/contact-og.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'Contact College Student Council',
-      },
-    ],
-  },
-};
 
 export default function Contact() {
   const [name, setName] = useState('')
