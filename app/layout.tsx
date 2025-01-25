@@ -9,6 +9,32 @@ import DeveloperModal from '@/components/DeveloperModal'
 
 const inter = Inter({ subsets: ['latin'] })
 
+export const metadata: Metadata = {
+  title: "Student Council :- Poornima College of Enigneering ",
+  description:
+    "Poornima College of Engineering Student Council Empowering students and fostering a vibrant campus community. Join us in making a difference!",
+  openGraph: {
+    title: "Student Council :- Poornima College of Enigneering",
+    description:
+      "Poornima College of Engineering Student Council Empowering students and fostering a vibrant campus community. Join us in making a difference!",
+    images: [
+      {
+        url: "https://www.poornima.org/img/slider/new/Website-banner%20(1)%20(2).jpg",
+        width: 1200,
+        height: 630,
+        alt: "Poornima College Of Engineering",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Student Council :- Poornima College of Enigneering",
+    description:
+      "Poornima College of Engineering Student Council Empowering students and fostering a vibrant campus community. Join us in making a difference!",
+    images: ["https://www.poornima.org/img/slider/new/Website-banner%20(1)%20(2).jpg"],
+  },
+}
+
 // export const metadata = {
 //   title: 'College Student Council',
 //   description: 'Official website of the College Student Council',
