@@ -65,6 +65,7 @@ export default function RootLayout({
 
   return (
     <html lang="en">
+      <title>Student Council :- Poornima College of Engineering</title>
       <body className={inter.className}>
         <Header />
         <main className="min-h-screen">
